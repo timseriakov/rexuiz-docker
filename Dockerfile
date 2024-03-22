@@ -17,7 +17,7 @@ RUN su rexuiz -c 'chmod 755 /home/rexuiz/Rexuiz/server/rexuiz-linux-dedicated-x8
 
 # Copy run script
 COPY run-rexuiz.sh /usr/local/bin/run-rexuiz.sh
-COPY ./config/server.cfg /home/rexuiz/.rexuiz/data
+COPY ./config/server.cfg /home/rexuiz/.rexuiz/data/server.cfg
 RUN chmod +x /usr/local/bin/run-rexuiz.sh
 
 # Expose server port
